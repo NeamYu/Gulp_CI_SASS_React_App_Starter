@@ -1,4 +1,5 @@
 'use strict';
+
 var ENVIRONMENT = 'development';    // production | development | testing
 var WEBPACK_NEED_WATCH = false;
 
@@ -109,8 +110,8 @@ gulp.task('copy:vendor:scripts', function () {
  */
 gulp.task('style:sass', function() {
     return compileTask.sass([
-        // 'src/assets/styles/**/*.sass',
-        'src/assets/styles/wilson.sass'
+        'src/assets/styles/**/*.scss'
+        //'src/assets/styles/wilson.scss'
     ], 'src/boot/assets/styles');
 });
 
@@ -157,7 +158,7 @@ gulp.task('watch', function () {
     ]);
 
     // Pre Compile Files
-    gulp.watch('src/assets/styles/**/*.sass', [
+    gulp.watch('src/assets/styles/**/*.scss', [
         'style:sass'
     ]);
 
