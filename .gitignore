@@ -1,0 +1,11 @@
+src/boot
+src/uploads
+src/application/vendor
+src/application/config/config.php
+src/application/libraries/Client/MicroAPI
+src/application/libraries/Client/Warehouse
+node_modules
+release
+yarn.lock
+.yo-rc.json
+
