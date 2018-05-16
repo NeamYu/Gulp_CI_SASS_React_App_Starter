@@ -1,9 +1,4 @@
 'use strict';
-
-/**
- * @author      Scar Wu
- * @copyright   Copyright (c) Ovomedia Creative Inc.
- */
 var ENVIRONMENT = 'development';    // production | development | testing
 var WEBPACK_NEED_WATCH = false;
 
@@ -166,11 +161,11 @@ gulp.task('watch', function () {
         'style:sass'
     ]);
 
-    // gulp.watch([
-    //     'src/assets/scripts/**/*.jsx'
-    // ], [
-    //     'complex:webpack'
-    // ]);
+    gulp.watch([
+        'src/assets/scripts/**/*.jsx'
+    ], [
+        'complex:webpack'
+    ]);
 });
 
 /**
